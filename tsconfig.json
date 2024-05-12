@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": ["es2017", "esnext.asynciterable"],
+    "baseUrl": ".",
+    "paths": {
+      "type/*": ["./src/@types/*"],
+      "@config/*": ["./src/config/*"],
+      "@api/*": ["./src/api/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@loaders/*": ["./src/loaders/*"],
+      "@locales/*": ["./src/locales/*"],
+      "@middleware/*": ["./src/middleware/*"],
+      "@routers/*": ["./src/routers/*"],
+      "@schemas/*": ["./src/schemas/*"],
+      "@scripts/*": ["./src/scripts/*"],
+      "@validations/*": ["./src/validations/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "pretty": true,
+    "sourceMap": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "allowJs": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*.ts"]
+}
